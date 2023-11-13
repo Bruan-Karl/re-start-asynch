@@ -1,0 +1,51 @@
+﻿Start
+
+
+While True:
+    Display Menu:
+        1. Addition
+        2. Subtraction
+        3. Multiplication
+        4. Division
+        5. Exit
+
+
+    Input choice
+
+
+    If choice equals 5:
+        Print "Exiting the calculator. Goodbye!"
+        Break the loop
+
+
+    Try:
+        If choice equals 1:
+            Input numbers as a list of floats
+        Else If choice is in [2, 3, 4]:
+            Input num1 and num2 as floats
+        Else:
+            Print "Error: Invalid choice. Please enter a number between 1 and 5."
+            Continue to the next iteration
+
+
+        // Perform the chosen operation based on the user's choice:/
+            - If choice equals 1:
+                Result = Sum of numbers using the add function
+            - Else If choice equals 2:
+                Result = Result of subtracting num2 from num1 using the subtract function
+            - Else If choice equals 3:
+                Result = Result of multiplying num1 and num2 using the multiply function
+            - Else If choice equals 4:
+                Try:
+                    Result = Result of dividing num1 by num2 using the divide function
+                Catch ValueError as e:
+                    Print "Error: Division by zero."
+                    Continue to the next iteration
+
+
+    Except ValueError:
+        Print "Error: Invalid input. Please enter numerical values."
+        Continue to the next iteration
+
+
+End
